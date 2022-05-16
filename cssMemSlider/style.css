@@ -58,9 +58,7 @@ body {
 }
 .slider-content {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    row-gap: 1em;
 }
 .slider-texts {
     display: flex;
@@ -71,8 +69,8 @@ body {
 .slider-text {
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     transition: 2s;
     flex-shrink: 0;
     font-family: 'Roboto', sans-serif;
@@ -105,6 +103,9 @@ body {
 
 .slider:hover .button {
     background-color: rgba(116, 80, 102, 0.9);
+    box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.6);
+}
+.slider:active .button {
     box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.6);
 }
 
@@ -153,6 +154,7 @@ input#r5:checked ~ .slider-content > .slider-texts > .slider-text {
         background-size: 50%;
     }
     .slider-content{
+        flex-direction: column-reverse;
         align-items:center;
         row-gap: 3rem;
     }
