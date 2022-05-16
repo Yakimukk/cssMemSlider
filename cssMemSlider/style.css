@@ -67,6 +67,7 @@ body {
     width: 100%;
 }
 .slider-text {
+    padding-left: 1rem;
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -79,6 +80,7 @@ body {
 }
 
 .slider-buttons{
+    padding-right: 1rem;
     display: flex;
     justify-content: center;
     align-items: flex-end;
