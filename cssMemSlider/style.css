@@ -148,3 +148,15 @@ input#r5:checked ~ .slider-content > .slider-texts > .slider-text {
     transform: translateX(-400%);
 }
 
+@media (max-width: 768px){
+    body {
+        background-size: 50%;
+    }
+    .slider-content{
+        align-items:center;
+        row-gap: 3rem;
+    }
+    .slider-text {
+        font-size: 1.5em;
+    }
+}
